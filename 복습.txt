@@ -1,0 +1,77 @@
+단축키
+! + Tap : 첫 코드 자동완성
+SHIFT + ALT + 방향키 : 코드 복사
+SHIFT + CTRL + K : 코드 삭제
+SHIFT + ALT + F : 코드 자동배열
+
+HTML
+- &nbsp; : " "(space)의 특수입력
+- div 와 span 의 차이 : div는 블록형, span은 인라인형
+  블록은 무조건 하단으로 떨어짐, 인라인형은 가로 공간이 부족하면 하단으로 떨어짐
+  인라인형은 width 와 height CSS가 먹히지 않음
+  인라인형을 블록처럼 취급 : display : inline-block , flex 등
+  span 외 인라인형 : strong, img, a 등
+
+- ul : 순서 X , ol : 순서 O
+
+- a href=~ : 클릭 시 해당 링크로 가도록 만드는 태그
+  li 밖의 a : 글씨 밖 전체에 링크 li 안의 a : 글씨만 링크가 걸림 
+  target = "_blank" (새창에서 열기), "_self"(현재창에서 열기)
+  a href = "#~" : 앵커 링크(창 내의 특정 위치로 이동)
+
+- usemap : 한 사진 내에 여러 링크를 걸 때 사용(좌표 활용)
+  rect : 사각형의 영역(좌상 ~ 우하)
+  poly : 다중점(시계 or 반시계)
+  circle : 원(중심좌표 + 반지름)
+
+- dl(dt,dd) : 설명 목록(dt는 제목, dd는 내용)
+
+- table(tr, td) : 표를 만드는 태그(tr은 행, td는 열, th는 강조 처리)
+  colspan : 열끼리 합치기(가로로 길어짐) rowspan : 행끼리 합치기(세로로 길어짐)
+  >> 위 명령어 사용시 사용위치에 유의
+
+- img alt = ~ : 시각장애인들을 위한 설명문구
+
+- form action="" name="" method="get" : 폼 작성할 때 넣는 함수
+- input type = radio(한개만 선택할 때) checkbox(여러개 선택할 수 있음) / checked(초기에 바로 설정됨)
+- lable for="" (글씨를 클릭해도 해당 radio 입력 가능)
+- textarea(cols = "" rows= "") : 게시판 작성할 때
+- placeholder(창 안에 회색 글씨로 창 알려주는 문구 추가)
+
+CSS
+- id선택자 : #id , class선택자 : .id
+- text-align : Justify >> 양쪽정렬
+- ul/ol{list-style : none;} none:없음(ul과 같아짐) disk(꽉찬 원) circle(빈 원) square(사각형)
+        list-style : decilmal deciaml : 숫자 lower-roman : 소문자(로마 숫자) upper-alpha : 대문자(영어)
+- margin : 0 auto; : div 내 영역을 가운데 정렬
+  text-align : center; : text를 가운데 정렬
+- float:left; : 왼쪽부터 가로정렬(메뉴판 작성할 때 활용)
+- border-collapse : collapse; : 표의 안 테두리를 하나로 합칠 때 사용
+- box-sizing : border-box; : border, padding 값을 고려하여 width 자동설정 
+- CSS를 외부에서 불러올 때 파일명은 .CSS
+- text-overflow : visible/ellipsis/clip(사각영역 밖으로 표시, ... 표시, 자름)
+- white-space;nowrap : 사각 모델 밖의 글씨는 그대로 표현
+- overflow : hidden/scroll : 사각 모델 밖의 글씨는 숨기기, 스크롤로 압축해줌
+- text-decoration : underline/overline/line-through/none
+- text-shadow : 0px 0px 0px #ffffff (아래로 n픽셀, 우로 n픽셀, 흩뿌리기 범위, 색상)
+- background : url() center cover/contain no-repeat fixed/scroll;
+  >> 축약형 순서 : 링크 가로세로위치(center) 사이즈(cover) 반복여부(no-repeat) 스크롤 여부(fixed)
+     순서를 지켜줘야 제대로 적용됨
+- border : 1px solid/dotted/dashed black; 
+
+Javascript
+
+- 변수는 문자형 데이터인지, 숫자형 데이터인지, 논리형 데이터인지 구분해야함
+- 문자 → 숫자형 변경 : "number()"
+- 덧셈은 숫자형 변경 안하면 제대로 인식 X, 빼기/곱하기/나누기는 가능\
+- document.write(num1+","+num2) (num1, num2는 변수이므로 ""를 넣지 않음)
+- getElementById : id를 활용하여 변수값을 가져옴
+- value와 innertext의 차이 : value는 요소의 값, innertext는 문자(글자) 그대로
+
+- a==b (a는 b와 같다(type 구분 X))
+- a===b(a는 b와 type까지 같다)
+
+- alert:알림창, confirm:Y/N 창, prompt:입력창
+
+-getElementById. readOnly : 읽기전용(수정 불가)
+               . focus() : 커서를 해당 창으로 보냄
