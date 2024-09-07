@@ -75,3 +75,5 @@ Javascript
 
 -getElementById. readOnly : 읽기전용(수정 불가)
                . focus() : 커서를 해당 창으로 보냄
+
+
