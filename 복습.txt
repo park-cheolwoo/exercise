@@ -1,3 +1,5 @@
+https://wackym.tistory.com/18
+
 단축키
 ! + Tap : 첫 코드 자동완성
 SHIFT + ALT + 방향키 : 코드 복사
@@ -76,4 +78,62 @@ Javascript
 -getElementById. readOnly : 읽기전용(수정 불가)
                . focus() : 커서를 해당 창으로 보냄
 
+★이미지 가운데 정렬하는 방법★
+1. img 태그 사용법
+  img는 HTML 안에 쓰는 태그이므로
+  img(div) 태그에 margin:0 auto;를 추가하면 가운데 정렬
+2. background 태그 사용법
+  background는 CSS 안에 쓰는 태그이므로
+  background를 적용할 div 태그에 margin:0 auto;
+  CSS 구문:background:url() center /cover no-repeat;를
+  '둘 다 추가해줘야함'
 
+- float:left; 구문과 display:flex; 구문의 차이점
+  float:left는 width에 border, padding이 포함되므로
+  전체 길이가 짧으면 알부가 하단으로 내려감
+  따라서 box-sizing:border-box;를 추가하거나 display:flex;를 활용해야함
+
+- visibility:hidden >> 해당 태그의 공간은 남기고 내용은 사라짐
+- display:none; >> 태그는 공간까지 사라짐
+
+- position:absolute; 적용법 >> 부모 태그에 position:relative; 를 추가해줘야함 
+  (relative 태그가 있는 부모 요소를 기준점으로 잡기 때문)
+
+- z-index >> 이미지가 겹치는 경우 위에 엎어지는 순서를 정함(숫자가 클수록 위에 위치)
+
+- css 호출 구문 >> <link rel="stylesheet" type="text/css" href="#">
+
+- text-shadow >> 텍스트에 그림자 추가
+  text-shadow:(가로px 세로px 번짐정도 색상)
+
+- <iframe> >> 외부 링크를 내부에 추가하는 태그
+
+- section h2:연결선택자(section 내 모든 h2)
+  section>h2:자식선택자(section 내 모든 h2 자식 요소)
+  input[type="#"]:속성선택자(input 중 type이 #인 모든 태그)
+  li:nth-child(1) (ul/ol/부모 요소) 중 1번째 li만 적용 
+  nth-child는 다른 태그(li 외의 h3 등 다른 태그)도 카운트
+  nth-of-type는 li 태그만 카운트
+  숫자 대신 홀수(odd)/짝수(even)도 가능
+
+  - opacity:0 >> 라디오박스/체크박스 없앰\
+  
+  -display:flex; 정렬
+  가로정렬 : justify-content:~~
+  세로정렬 : align-items:~~
+
+- background-size : cover >> 사진 중 긴 쪽 기준으로 태그를 꽉 채움
+- object-fit:cover >> 사진 비율 그대로 태그를 꽉 채움
+
+-미디어쿼리 : @media screen and (조건:max-width:~) {CSS 결과}
+  (반응형 웹에 사용)
+
+-perspective : 원근감(숫자가 작을수록 극대화)
+-backface-visibility:visible : 이미지의 뒷면을 표시
+-transform : translate(이동)/rotate(회전)/skew(왜곡)/scale(비율변경)
+-transition:all 1s ease-in 1s;
+ (모든 요소(가로/세로)에 적용, 적용시간, 적용방법, 딜레이)
+
+- 애니메이션
+  @keyframes rotate(애니메이션 이름) from{처음상태} 50%{중간} to {최종상태}
+  animation : rotate(이름) 1.5s(적용시간) infinite(횟수) alternate(원상태로 역행동)
