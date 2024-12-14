@@ -1,0 +1,4 @@
+-- django migrate가 안될 때 해결방안
+https://velog.io/@ssu-uky/django-migrations-%EA%B0%80-%EC%95%88%EB%90%98%EB%8A%94-%EC%9D%B4%EC%9C%A0
+* DB를 날려도 된다 >> __init.py__ 를 제외한 모든 py 제거 >> sqlite 앱으로 DB에 접근해 Table 모두 삭제 >> makemigrations >> migrate
+

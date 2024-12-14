@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    var txt = "가나다라 마바사아 자차카타 파하"
+    document.write(txt.charAt(3)+"<br/>") //라 (문자열은 0부터 시작)
+    document.write(txt.length+"<br/>") //17
+    document.write(txt.substr(3,4)+"<br/>") //라 마바(글자 개수 가져오기/공백 포함) 
+    document.write(txt.substring(6,11)+"<br/>")//바사아 자(글자 위치 / 공백 포함) //파이썬과 동일
+    document.write(txt.search("다")+"<br/>") // 있으면 글자 위치값(텍스트 앞자리 기준) 없으면 -1 //파이썬과 동일
+    document.write(txt.indexOf("마")+"<br/>") //있으면 위치값 없으면 null //파이썬은 find함수(없으면 에러)
+    document.write(txt.replace("다","나")+"<br/>") //모든 "다"를 "나"로 치환 //파이썬과 동일
+ </script>
+</body>
+</html>
