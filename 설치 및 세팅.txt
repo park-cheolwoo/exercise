@@ -78,3 +78,14 @@ http://127.0.0.1:8000/admin
 
 12. 모카루
 https://www.mockaroo.com/
+
+13. spring 설치
+Apache Tomcat(톰캣) 10 win64버전
+Spring boot for eclipse
+Eclipse web developer
+Eclipse market > java and web > install > confirm
+
+14. lombok 설치
+
+
+
